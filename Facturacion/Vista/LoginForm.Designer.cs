@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label1 = new System.Windows.Forms.Label();
             this.CodigoUsuariotextBox = new System.Windows.Forms.TextBox();
             this.ContraseñatextBox = new System.Windows.Forms.TextBox();

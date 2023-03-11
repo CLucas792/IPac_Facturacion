@@ -16,7 +16,7 @@ namespace Entidades
         {
         }
 
-        public Usuario(string codigoUsuario, string nombre, string correo, DateTime fechaCreacion, string rol, bool estadoActivo, string contraseña, byte foto)
+        public Usuario(string codigoUsuario, string nombre, string correo, DateTime fechaCreacion, string rol, bool estadoActivo, string contraseña, byte[] foto)
         {
             CodigoUsuario = codigoUsuario;
             Nombre = nombre;

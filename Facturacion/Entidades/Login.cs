@@ -1,16 +1,14 @@
 ﻿namespace Entidades
 {
-    internal class Login
+    public class Login
     {
         public string CodigoUsuario { get; set; }
         public string Contraseña { get; set; }
-        public string Rol { get; set; }
 
-        public Login(string codigoUsuario, string contraseña, string rol)
+        public Login(string codigoUsuario, string contraseña)
         {
             CodigoUsuario = codigoUsuario;
             Contraseña = contraseña;
-            Rol = rol;
         }
 
         public Login()

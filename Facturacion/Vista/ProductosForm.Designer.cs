@@ -45,11 +45,13 @@
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Modificarbutton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
-            this.ProductosdataGridView = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.EstaActivocheckBox = new System.Windows.Forms.CheckBox();
+            this.ProductosdataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.FotopictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductosdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductosdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +67,7 @@
             // CodigotextBox
             // 
             this.CodigotextBox.Location = new System.Drawing.Point(104, 13);
-            this.CodigotextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CodigotextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CodigotextBox.Name = "CodigotextBox";
             this.CodigotextBox.Size = new System.Drawing.Size(148, 24);
             this.CodigotextBox.TabIndex = 1;
@@ -143,6 +145,7 @@
             this.AdjuntarImagenbutton.Size = new System.Drawing.Size(25, 26);
             this.AdjuntarImagenbutton.TabIndex = 9;
             this.AdjuntarImagenbutton.UseVisualStyleBackColor = true;
+            this.AdjuntarImagenbutton.Click += new System.EventHandler(this.AdjuntarImagenbutton_Click);
             // 
             // Cancelarbutton
             // 
@@ -157,13 +160,13 @@
             // 
             // Eliminarbutton
             // 
-            this.Eliminarbutton.Enabled = false;
             this.Eliminarbutton.Location = new System.Drawing.Point(258, 179);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(75, 23);
             this.Eliminarbutton.TabIndex = 22;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Guardarbutton
             // 
@@ -178,7 +181,6 @@
             // 
             // Modificarbutton
             // 
-            this.Modificarbutton.Enabled = false;
             this.Modificarbutton.Location = new System.Drawing.Point(83, 179);
             this.Modificarbutton.Name = "Modificarbutton";
             this.Modificarbutton.Size = new System.Drawing.Size(88, 23);
@@ -197,24 +199,45 @@
             this.Nuevobutton.UseVisualStyleBackColor = true;
             this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 146);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 18);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Esta Activo";
+            // 
+            // EstaActivocheckBox
+            // 
+            this.EstaActivocheckBox.AutoSize = true;
+            this.EstaActivocheckBox.Location = new System.Drawing.Point(108, 146);
+            this.EstaActivocheckBox.Name = "EstaActivocheckBox";
+            this.EstaActivocheckBox.Size = new System.Drawing.Size(15, 14);
+            this.EstaActivocheckBox.TabIndex = 26;
+            this.EstaActivocheckBox.UseVisualStyleBackColor = true;
+            // 
             // ProductosdataGridView
             // 
             this.ProductosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductosdataGridView.Location = new System.Drawing.Point(2, 208);
             this.ProductosdataGridView.Name = "ProductosdataGridView";
-            this.ProductosdataGridView.Size = new System.Drawing.Size(421, 205);
-            this.ProductosdataGridView.TabIndex = 24;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
+            this.ProductosdataGridView.Size = new System.Drawing.Size(645, 206);
+            this.ProductosdataGridView.TabIndex = 27;
             // 
             // ProductosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 417);
+            this.ClientSize = new System.Drawing.Size(648, 417);
             this.Controls.Add(this.ProductosdataGridView);
+            this.Controls.Add(this.EstaActivocheckBox);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.Cancelarbutton);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Guardarbutton);
@@ -231,12 +254,13 @@
             this.Controls.Add(this.CodigotextBox);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProductosForm";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.ProductosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FotopictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductosdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductosdataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,7 +283,9 @@
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.Button Modificarbutton;
         private System.Windows.Forms.Button Nuevobutton;
-        private System.Windows.Forms.DataGridView ProductosdataGridView;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.CheckBox EstaActivocheckBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView ProductosdataGridView;
     }
 }

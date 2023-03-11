@@ -59,17 +59,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 36);
+            this.label1.Location = new System.Drawing.Point(60, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo";
             // 
             // CodigotextBox
             // 
             this.CodigotextBox.Enabled = false;
-            this.CodigotextBox.Location = new System.Drawing.Point(120, 30);
+            this.CodigotextBox.Location = new System.Drawing.Point(122, 2);
             this.CodigotextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CodigotextBox.Name = "CodigotextBox";
             this.CodigotextBox.Size = new System.Drawing.Size(132, 22);
@@ -78,7 +78,7 @@
             // NombretextBox
             // 
             this.NombretextBox.Enabled = false;
-            this.NombretextBox.Location = new System.Drawing.Point(120, 60);
+            this.NombretextBox.Location = new System.Drawing.Point(122, 32);
             this.NombretextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(132, 22);
@@ -87,36 +87,37 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 66);
+            this.label2.Location = new System.Drawing.Point(55, 38);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre";
             // 
             // ContraseñatextBox
             // 
             this.ContraseñatextBox.Enabled = false;
-            this.ContraseñatextBox.Location = new System.Drawing.Point(120, 90);
+            this.ContraseñatextBox.Location = new System.Drawing.Point(122, 62);
             this.ContraseñatextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ContraseñatextBox.Name = "ContraseñatextBox";
+            this.ContraseñatextBox.PasswordChar = '*';
             this.ContraseñatextBox.Size = new System.Drawing.Size(132, 22);
             this.ContraseñatextBox.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 96);
+            this.label3.Location = new System.Drawing.Point(38, 68);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.Size = new System.Drawing.Size(77, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Contraseña";
             // 
             // CorreotextBox
             // 
             this.CorreotextBox.Enabled = false;
-            this.CorreotextBox.Location = new System.Drawing.Point(120, 120);
+            this.CorreotextBox.Location = new System.Drawing.Point(122, 92);
             this.CorreotextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CorreotextBox.Name = "CorreotextBox";
             this.CorreotextBox.Size = new System.Drawing.Size(132, 22);
@@ -125,20 +126,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(64, 126);
+            this.label4.Location = new System.Drawing.Point(66, 98);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.Size = new System.Drawing.Size(49, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Correo";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 156);
+            this.label5.Location = new System.Drawing.Point(86, 128);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 16);
+            this.label5.Size = new System.Drawing.Size(29, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "Rol";
             // 
@@ -149,7 +150,7 @@
             this.RolcomboBox.Items.AddRange(new object[] {
             "Administrador",
             "Usuario"});
-            this.RolcomboBox.Location = new System.Drawing.Point(120, 156);
+            this.RolcomboBox.Location = new System.Drawing.Point(122, 128);
             this.RolcomboBox.Name = "RolcomboBox";
             this.RolcomboBox.Size = new System.Drawing.Size(121, 24);
             this.RolcomboBox.TabIndex = 9;
@@ -157,10 +158,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 197);
+            this.label6.Location = new System.Drawing.Point(24, 169);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 16);
+            this.label6.Size = new System.Drawing.Size(91, 16);
             this.label6.TabIndex = 10;
             this.label6.Text = "Estado Activo";
             // 
@@ -168,7 +169,7 @@
             // 
             this.ActivocheckBox.AutoSize = true;
             this.ActivocheckBox.Enabled = false;
-            this.ActivocheckBox.Location = new System.Drawing.Point(120, 199);
+            this.ActivocheckBox.Location = new System.Drawing.Point(122, 171);
             this.ActivocheckBox.Name = "ActivocheckBox";
             this.ActivocheckBox.Size = new System.Drawing.Size(15, 14);
             this.ActivocheckBox.TabIndex = 11;
@@ -177,7 +178,7 @@
             // FotopictureBox
             // 
             this.FotopictureBox.BackColor = System.Drawing.Color.White;
-            this.FotopictureBox.Location = new System.Drawing.Point(259, 30);
+            this.FotopictureBox.Location = new System.Drawing.Point(261, 2);
             this.FotopictureBox.Name = "FotopictureBox";
             this.FotopictureBox.Size = new System.Drawing.Size(110, 112);
             this.FotopictureBox.TabIndex = 12;
@@ -187,7 +188,7 @@
             // 
             this.AdjuntarImagenbutton.Enabled = false;
             this.AdjuntarImagenbutton.Image = ((System.Drawing.Image)(resources.GetObject("AdjuntarImagenbutton.Image")));
-            this.AdjuntarImagenbutton.Location = new System.Drawing.Point(346, 148);
+            this.AdjuntarImagenbutton.Location = new System.Drawing.Point(348, 120);
             this.AdjuntarImagenbutton.Name = "AdjuntarImagenbutton";
             this.AdjuntarImagenbutton.Size = new System.Drawing.Size(23, 24);
             this.AdjuntarImagenbutton.TabIndex = 13;
@@ -196,7 +197,7 @@
             // 
             // Nuevobutton
             // 
-            this.Nuevobutton.Location = new System.Drawing.Point(2, 236);
+            this.Nuevobutton.Location = new System.Drawing.Point(4, 208);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(75, 23);
             this.Nuevobutton.TabIndex = 14;
@@ -206,8 +207,7 @@
             // 
             // Modificarbutton
             // 
-            this.Modificarbutton.Enabled = false;
-            this.Modificarbutton.Location = new System.Drawing.Point(87, 236);
+            this.Modificarbutton.Location = new System.Drawing.Point(89, 208);
             this.Modificarbutton.Name = "Modificarbutton";
             this.Modificarbutton.Size = new System.Drawing.Size(75, 23);
             this.Modificarbutton.TabIndex = 15;
@@ -218,7 +218,7 @@
             // Guardarbutton
             // 
             this.Guardarbutton.Enabled = false;
-            this.Guardarbutton.Location = new System.Drawing.Point(168, 236);
+            this.Guardarbutton.Location = new System.Drawing.Point(170, 208);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(75, 23);
             this.Guardarbutton.TabIndex = 16;
@@ -228,18 +228,18 @@
             // 
             // Eliminarbutton
             // 
-            this.Eliminarbutton.Enabled = false;
-            this.Eliminarbutton.Location = new System.Drawing.Point(249, 236);
+            this.Eliminarbutton.Location = new System.Drawing.Point(251, 208);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(75, 23);
             this.Eliminarbutton.TabIndex = 17;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Cancelarbutton
             // 
             this.Cancelarbutton.Enabled = false;
-            this.Cancelarbutton.Location = new System.Drawing.Point(330, 236);
+            this.Cancelarbutton.Location = new System.Drawing.Point(332, 208);
             this.Cancelarbutton.Name = "Cancelarbutton";
             this.Cancelarbutton.Size = new System.Drawing.Size(75, 23);
             this.Cancelarbutton.TabIndex = 18;
@@ -250,9 +250,9 @@
             // UsuariodataGridView
             // 
             this.UsuariodataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UsuariodataGridView.Location = new System.Drawing.Point(1, 265);
+            this.UsuariodataGridView.Location = new System.Drawing.Point(4, 237);
             this.UsuariodataGridView.Name = "UsuariodataGridView";
-            this.UsuariodataGridView.Size = new System.Drawing.Size(404, 250);
+            this.UsuariodataGridView.Size = new System.Drawing.Size(857, 193);
             this.UsuariodataGridView.TabIndex = 19;
             // 
             // errorProvider1
@@ -263,7 +263,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 513);
+            this.ClientSize = new System.Drawing.Size(860, 433);
             this.Controls.Add(this.UsuariodataGridView);
             this.Controls.Add(this.Cancelarbutton);
             this.Controls.Add(this.Eliminarbutton);
