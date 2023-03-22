@@ -169,6 +169,7 @@ namespace Vista
                     LimpiarControles();
                     TraerUsuario();
                     MessageBox.Show("Registro guardad", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Eliminarbutton.Enabled = true;
                 }
                 else
                 {
@@ -201,6 +202,7 @@ namespace Vista
                     DeshabilitarControles();
                     TraerUsuario();
                     MessageBox.Show("Registro Actualizado");
+                    Eliminarbutton.Enabled = true;
                 }
                 else
                 {

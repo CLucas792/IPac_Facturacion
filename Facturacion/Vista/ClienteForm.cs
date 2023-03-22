@@ -66,6 +66,7 @@ namespace Vista
             Guardarbutton.Enabled = true;
             tipoOperacion = "Nuevo";
             Modificarbutton.Enabled = false;
+            Eliminarbutton.Enabled = false;
 
         }
 
@@ -144,6 +145,7 @@ namespace Vista
                     LimpiarControles();
                     TraerCliente();
                     MessageBox.Show("Registro guardad", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Eliminarbutton.Enabled = true;
                 }
                 else
                 {
@@ -169,6 +171,7 @@ namespace Vista
                     DeshabilitarControles();
                     TraerCliente();
                     MessageBox.Show("Registro Actualizado");
+                    Eliminarbutton.Enabled = true;
                 }
                 else
                 {
